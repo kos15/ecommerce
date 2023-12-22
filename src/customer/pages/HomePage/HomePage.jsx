@@ -1,6 +1,6 @@
 import React from "react";
 import MainCarousel from "../../components/HomeCarousel/MainCarousel";
-import HomeSectionCarousel from "../../components/HomwSectionCarousel/HomeSectionCarousel";
+import HomeSectionCarousel from "../../components/HomeSectionCarousel/HomeSectionCarousel";
 import { mens_kurta } from "../../../Data/Men/men_kurta";
 import { lehngacholiPage2 } from "../../../Data/Saree/lenghaCholiPage2";
 import { mensShoesPage1 } from "../../../Data/shoes";

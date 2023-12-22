@@ -1,6 +1,7 @@
 import { Box, Button, Grid, TextField } from "@mui/material";
 import React from "react";
 import AddressCard from "../AddressCard/AddressCard";
+import { useNavigate } from "react-router-dom";
 
 function DeliveryAddressForm() {
 
@@ -18,9 +19,11 @@ function DeliveryAddressForm() {
             zipCode: data.get("zip"),
             phoneNumber: data.get("phoneNumber")
         }
-
-        console.log(address)
     }
+    const navigate = useNavigate();
+    const handleDeliverHere = () => {
+      console.log("handleDeliverHere")
+      navigate("/checkout?step=3")};
   return (
     <div>
       <Grid container spacing={4}>
@@ -32,6 +35,7 @@ function DeliveryAddressForm() {
           <div className="p-5 py-7 border-b cursor-pointer">
             <AddressCard />
             <Button
+            onClick={handleDeliverHere}
               sx={{ mt: 2, bgcolor: "RGB(145 85 253)" }}
               size="large"
               variant="contained"
@@ -124,7 +128,7 @@ function DeliveryAddressForm() {
                     variant="contained"
                     type="submit"
                   >
-                    Deliver Here
+                    Add Address
                   </Button>
                 </Grid>
               </Grid>

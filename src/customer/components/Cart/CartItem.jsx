@@ -24,7 +24,7 @@ function CartItem() {
 
           <div className="flex space-x-5 items-center text-gray-900 pt-6">
             <p className="opacity-50 line-through">211</p>
-            <p className="font-semibold">199</p>
+            <p className="font-semibold">₹199</p>
             <p className="text-green-600 font-semibold">5% Off</p>
           </div>
         </div>

@@ -9,6 +9,7 @@ import {
 import { navigation } from "../../../Data/navigation";
 import { Avatar } from "@mui/material";
 import { deepPurple } from "@mui/material/colors";
+import { useNavigate } from "react-router-dom";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -16,9 +17,16 @@ function classNames(...classes) {
 
 export default function Example() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const handelCategoryClick = (category, section, item) => {
+    navigate(`${category.id}/${section.id}/${item.id}`);
+    setOpen(!open);
+  };
 
   return (
     <div className="bg-white mb-10">
+      {console.log("Open: ",open)}
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
@@ -200,10 +208,7 @@ export default function Example() {
           Get free delivery on orders over $100
         </p>
 
-        <nav
-          aria-label="Top"
-          className="mx-auto px-4 sm:px-6 lg:px-8"
-        >
+        <nav aria-label="Top" className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="border-b border-gray-200">
             <div className="flex h-16 items-center">
               <button
@@ -319,7 +324,7 @@ export default function Example() {
                                                 className="flex"
                                               >
                                                 <a
-                                                  href={item.href}
+                                                  href={`${category.id}/${section.id}/${item.id}`}
                                                   className="hover:text-gray-800"
                                                 >
                                                   {item.name}
@@ -399,7 +404,7 @@ export default function Example() {
 
                 {/* Cart */}
                 <div className="ml-4 flow-root lg:ml-6">
-                  <a href="#" className="group -m-2 flex items-center p-2">
+                  <a href="/cart" className="group -m-2 flex items-center p-2">
                     <ShoppingBagIcon
                       className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                       aria-hidden="true"
