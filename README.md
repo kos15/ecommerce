@@ -65,6 +65,23 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
+![image](https://github.com/kos15/ecommerce/assets/30227491/f9444aae-f9b2-4edb-96a5-4ed129f2a5f0)
+
+![image](https://github.com/kos15/ecommerce/assets/30227491/a26400d4-9f6a-46ea-bcb1-356beabe2839)
+
+![image](https://github.com/kos15/ecommerce/assets/30227491/9c6f2e4e-23aa-4070-b4be-388711270f37)
+
+![image](https://github.com/kos15/ecommerce/assets/30227491/d30be44d-3d54-40d8-ad83-69ce30e741f4)
+
+![image](https://github.com/kos15/ecommerce/assets/30227491/d64ac83b-aae7-41a1-988a-6a791c0411fc)
+
+![image](https://github.com/kos15/ecommerce/assets/30227491/d158841b-74f1-412f-afc2-8ac4f6de91b8)
+
+![image](https://github.com/kos15/ecommerce/assets/30227491/975f7a98-309c-492d-ba06-947c1511b428)
+
+![image](https://github.com/kos15/ecommerce/assets/30227491/2c6c92b6-8537-4063-b82c-b30b34d61d7d)
+
+
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
